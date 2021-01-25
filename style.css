@@ -1,0 +1,174 @@
+body{
+	background: #efefef;
+	font-family: nunito,sans-serif;
+	}
+
+a, a:hover, a:focus{
+	text-decoration: none;
+	color: #fff;
+}
+img{
+	width: 100%;
+	height: auto;
+}
+
+/* header */
+@keyframes clignote{
+	from{opacity: 1;}
+	to{opacity: 0;}
+
+}
+
+header{
+	line-height: 50px;
+	background: #5fcf88;
+	text-align: center;
+	font-weight: 700;
+}
+
+header h1 a span{
+	animation: clignote .8s ease alternate infinite;
+
+}
+
+
+header h1 a {
+	font-size: 1.5em;
+}
+ header nav{
+ 	font-size: 0.9em;
+
+ }
+
+nav ul li{
+	list-style: none;
+}
+
+/* Présentation */
+
+section{
+	padding: 30px 0px;
+	background: white;
+	border-bottom: 3px solid #ddd;
+	text-align: center;
+}
+section h1{
+	font-size: 2.8em;
+	font-weight: bold;
+	color: #333;
+	margin-bottom: 10px;
+}
+section p{
+	font-size: 1.3em;
+	color: #777;
+	line-height: 1.5em;
+	font-style: italic;
+}
+/* articles */
+.articles{
+	margin-bottom: 15px;
+}
+article{
+	margin-top: 35px;
+	border-radius: 8px;
+	background: #fff;
+	border-bottom: 3px solid #ddd;
+}
+article img{
+	border-radius: 8px 8px 0 0;
+}
+article h1,article a, article p{
+	margin:20px;
+}
+
+article h1{
+	font-weight: bold;
+	color: #333;
+	font-size: 1.5em;
+	line-height: 1.4em;
+}
+
+article p{
+	color: #555;
+	line-height: 1.4em;
+}
+
+article a{
+	display: block;
+	background: #5fcf88;
+	border-radius: 4px;
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 2px solid #4ca666;
+}
+ * article{
+ 	text-align: center;
+ }
+
+ 
+
+
+
+/* affichage sue tablette */
+@media (min-width: 768px) {
+	header h1{
+		text-align: left;
+	}
+
+	header ul{
+		float: right;
+	}
+
+	header li{
+		float: left;
+	}
+
+	header li + li{
+		margin-left: 15px;
+	}
+
+	section{
+		text-align: left;
+	}
+
+}
+
+
+
+.footer{
+	background-color: black;
+	border: 2px solid black;
+	padding:auto;
+	margin:auto;
+	margin-top: 35px;
+	height: 100px;
+	width: 100%;
+}
+
+.footer p{
+	text-align: center;
+	color: white;
+	margin-right: -40px;
+	margin-top: 45px;
+}
+
+
+
+
+
+/* affichage sur écran de bureau */
+@media (max-width: 992px){
+	article img{
+		filter: grayscale(100%);
+		transition: .6s linear;
+	}
+	article:hover img{
+		filter: none;
+	}
+}
+
+
+
+
+
+
